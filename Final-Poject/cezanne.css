@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Comforter&family=Dongle:wght@300&family=Love+Light&family=Merriweather+Sans:wght@700&family=Open+Sans:wght@300&family=PT+Serif&family=Pacifico&family=Redressed&family=Roboto+Serif:ital,wght@1,100&family=Shizuru&family=Smooch+Sans:wght@500&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    cursor: pointer;
+}
+.header-intro {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./image/cezanne-intro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+.over-lay {
+width: 50%;
+height: 100%;
+
+backdrop-filter: blur(5px) ;
+display: flex;
+justify-content: start;
+align-items: center;
+padding-left:50px ;
+color: #FFCB74;
+text-shadow: 0 0 1em black;
+}
+.over-lay-white {
+    backdrop-filter: blur(5px) ;
+    width: 50%;
+    height: 100%;
+    display: flex;
+justify-content: end;
+align-items: center;
+padding-right:50px ;
+color: #FFCB74;
+
+text-shadow: 0 0 1em black;
+}
+.over-lay h1 , .over-lay-white h1 {
+    font-size: 10rem;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1 1 0.5em black;
+    color: #FFCB74;
+}
+.over-lay-white h1 {
+    font-size: 11rem;
+}
+.main-cezanne{
+    width: 100%;
+    background-color: #F4F6FF;
+    height: 145vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-list {
+    width: 100%;
+height: 15vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #FFCB74;
+}
+.btn {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ font-size: 2rem;   
+ transition: .5s linear;
+ font-family: 'Open Sans', sans-serif;
+}
+.btn:hover {
+    background-color: #c39b56;
+    transition: .5s linear;
+}
+.list-tab {
+    width: 100%;
+}
+.mainTab-one {
+    width: 100%;
+    height: 200vh;
+    display: none;
+}
+.activeTab {
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.main-cezanne-two{
+    background-color: #FFCB74;
+    width: 100%;
+    height: 55vh;
+}
+.header-list a {
+    width: 25%;
+height: 100%;
+text-decoration: none;
+}
+.header-list a .btn-home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;   
+    transition: .5s linear;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+.btn-home:hover {
+    background-color: #c39b56;
+    transition: .5s linear;
+}
+.main-cezanne-two {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.65fr 1.35fr;
+    padding: 0 20px;
+    border-top: 1px solid black;
+}
+.mydetail {
+    width: 100%;
+    padding: 10px;
+    
+}
+.mydetail p {
+margin-top: 20px ;
+margin-left: 30px;
+    font-size: 25px;
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+}
+.photo-my {
+    width: 30vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30vh;
+    border: 1px solid black;
+}
+.mydetail img {
+    width: 20vh;
+}
+.for {
+    width: 100%;
+    color: #222;
+    padding-top: 50px ;
+}
+.for h3 {
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 25px;
+    width: 100%;
+}
+.for p {
+
+    font-size: 15px;
+}
+.main-detail-childhood {
+    width:85%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #FFCB74;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s linear;
+}
+.content h1 {
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;  
+    transition: 0.5s linear;
+}
+
+.overlay-content {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+background-color: #FFCB74;
+opacity: 0;
+transition: 0.5s linear;
+display: grid;
+grid-template-columns: 0.75fr 1.25fr;
+padding: 20px;
+column-gap: 20px;
+transition: 0.5s linear;
+}
+.overlay-content-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #FFCB74;
+    opacity: 0;
+    transition: 0.5s linear;
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    padding: 20px;
+    column-gap: 20px;
+    transition: 0.5s linear;  
+}
+.overlay-content-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #FFCB74;
+    opacity: 0;
+    transition: 0.5s linear;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    column-gap: 20px;
+    transition: 0.5s linear;  
+}
+
+.content:hover h1 {
+    display: none;
+    transition: 0.5s linear;
+}
+.content:hover {
+    border: none;
+    transition: 0.5s linear;
+}
+
+.content:hover .overlay-content {
+    opacity: 0.8;
+    transition: 0.5s linear;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.content:hover .overlay-content-2  {
+    opacity: 0.8;
+    transition: 0.5s linear;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.content:hover .overlay-content-3 {
+    opacity: 0.8;
+    transition: 0.5s linear;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.photo-child ,.photo-child-2 , .photo-child-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/cezanne-family.jpg);
+    background-position: center;
+background-size: cover;
+border-radius: 20px;
+}
+.photo-child-2 {
+    background-image: url(./image/cezanne-child.jpg);
+}
+.photo-child-3 {
+    background-image: url(./image/cezanne-old.jpg);
+}
+.detail-child-photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.detail-child-photo p ,.detail-child-photo-2 p {
+    font-size: 17px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;  
+}
+.detail-child-photo-3 p {
+    font-size: 15px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;  
+}
+.detail-child-photo hr ,.detail-child-photo-2 hr , .detail-child-photo-3 hr {
+   margin: 0 auto;
+    width: 80%;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+height: 2px;
+}
+.main-career-cezanne {
+    max-width: 1440px;
+  height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+    padding-left:  20px ;
+    padding-right: 20px;
+    max-height: 1220px;
+}
+.main-3d {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    perspective: 800px;
+    overflow-x: hidden;
+}
+.main-3d::-webkit-scrollbar {
+    width: 0;
+}
+.face {
+
+    height: 600px;
+    width: 600px;
+    box-shadow: 20px 20px 70px  black inset;
+    overflow: hidden;
+    border: none;
+}
+.left {
+    position: relative;
+    left: -600px;
+    top: 1200px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+    background-color: #333;
+}
+.right {
+    position: relative;
+    left: 600px;
+    top: -1200px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    background-color: #333;
+}
+.backface {
+    background-color: #222;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.top {
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+    background-color: #333;
+}
+.bottom {
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    background-image: url(./image/flor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.detail-photo {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 35px;
+margin-top: 70px;
+box-shadow: 2px 2px 10px whitesmoke , -2px -2px 10px whitesmoke
+
+}
+.detail-photo img {
+    width: 200px;
+height: 300px;
+object-fit: cover;
+}
+.list-button-career {
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1.5fr .5fr;
+    border-left: 2px solid black;
+}
+
+.list-btn-career ul {
+text-decoration: none;
+list-style: none;
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+.list-btn-career ul li {
+    text-decoration: none;
+list-style: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.list-button-dad{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.list-btn-career {
+    width: 100%;
+    height: 100%;
+    display: flex;
+ justify-content: start;
+ align-items: flex-start;
+}
+.btn-career {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.btn-career a {
+    width: 80%;
+
+
+}
+.btn-career a button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #FFCB74;
+    font-size: 20px;
+    height: 70px;
+}
+.detail-box {
+    width: 100%;
+    height: 100%;
+    background-color: #FFCB74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-tab {
+    border: 2px solid black;
+    opacity: 1;
+}
+.detail-box h1 {
+ font-size: 5rem;
+ font-family: 'Open Sans', sans-serif;  
+ transform: rotate(270deg);
+}
+.main-cezanne-3 {
+   width: 100%;
+    height: 145vh;
+    background-color: #F4F6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-paul-mighty{
+ width: 100%;
+    height: 145vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/painting-c.jpg);
+}
+.main-content-mighty{
+    width: 100%;
+    height: 75%;
+    background-image: url(./image/autoportrait_avec_un_papier_peint_vert-olive_par_paul_cezanne.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 10px 10px 50px black , 10px 10px 50px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-mighty {
+    max-width:1440px ;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 50px;
+
+}
+.detail-mighty-paul {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ;
+}
+.detail-themnal h1 {
+    color: rgb(204, 204, 10);
+    font-size: 3rem;
+    line-height: 1;
+    width: 80%;
+    font-family: 'Smooch Sans', sans-serif;
+}
+.mainDetail p {
+    width: 80%;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;  
+}
+.paul-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.paul-btn button {
+    width: 38%;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(204, 204, 10);
+    
+}
+.photo-mighty-paul {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.25fr 0.5fr 1.25fr;
+
+row-gap:5px ;
+column-gap: 5px;
+}
+.imgages {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.imgages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.images-1 {
+    grid-row: 1/3;
+}
+.images-4 {
+    grid-row: 2/4;
+}
+@media only screen and (max-width:849px) {
+    .container {
+        width: 100%;
+        
+    }
+    .over-lay-white , .over-lay {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+   .over-lay-white h1{
+        font-size: 2.5rem;
+    }
+    .over-lay h1 {
+        font-size: 2.5rem;
+    }
+    .header-intro {
+        height: 60vh;
+    }.overlay-content-2  br  ,
+     .overlay-content-3 br ,.overlay-content br {
+        display: none;
+    }.overlay-content-2  hr  ,
+    .overlay-content-3 hr ,.overlay-content hr {
+        display: none;
+    }
+
+    .overlay-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .overlay-content-2    , .overlay-content-3{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .photo-child, .photo-child-2, .photo-child-3{
+        height: 29%;
+    }
+    .detail-child-photo ,.detail-child-photo-2 , .detail-child-photo-3{
+        height: 71%;
+    }
+    .detail-child-photo p,.detail-child-photo-2 p, .detail-child-photo-3 p {
+        
+        font-size: 9px;
+    }
+    .main-tab-two {
+        display: none;
+    }
+    .btn-main-tab-two {
+        display: none;
+    }
+    .overlay-mighty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .detail-mighty-paul {
+        height: 60%;
+    }
+    .detail-themnal h1 {
+        width: 100%;
+        font-size: 25px;
+    }
+    .mainDetail p {
+        font-size: 10px;
+    }
+    .btn {
+        width: 33%;
+    }
+    .photo-my {
+        width: 23vh;
+        height: 25vh;
+    }
+    .photo-my img {
+        width: 18vh;
+    }
+    .for {
+        padding: 0;
+    }
+   .for h3 {
+       font-size: 15px;
+   }
+   .for p {
+       font-size: 10px;
+   }
+   .mydetail p {
+       font-size: 15px;
+   }
+   .paul-btn button {
+       font-size: 15px;
+   }
+}

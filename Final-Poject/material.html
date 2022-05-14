@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Color</title>
+    <link data-n-head="ssr" rel="icon" type="image/png" sizes="auto" href="./image/logo-icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Comforter&family=Dongle:wght@300&family=Love+Light&family=Merriweather+Sans:wght@700&family=Open+Sans:wght@300&family=PT+Serif&family=Pacifico&family=Poppins&family=Redressed&family=Roboto+Serif:ital,wght@1,100&family=Shizuru&family=Smooch+Sans:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    height: 100%;
+}
+.header-intro {
+    width: 100%;
+    height: 20vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 70px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.header-intro a {
+    color: #333;
+}
+.bx-x {
+    transition: .2s linear;
+}
+.bx-x:hover {
+color: rgb(251, 47, 47);
+    transition: .2s linear;
+}
+.logo-tab {
+    width: 130px;
+    height: 18vh;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 7px;
+    left: 20px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+border: 1px solid black;
+}
+.logo-tab img {
+    width: 100px;
+}
+.main-detail-dc  , .main-detail-dungtay{
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr;
+    width: 100%;
+    height: 100vh;
+}
+.main-detail-dungtay {
+    grid-template-columns: 1.75fr 0.25fr;
+}
+.themnail-dc , .themnail-dt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-right: 1px solid black;
+}
+.themnail-dc h1 , .themnail-dt h1 {
+    font-size: 2.2rem;
+    font-family: 'Open Sans', sans-serif;
+width:  60vh;
+transform: rotate(270deg);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.content-dc , .content-dt {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.content-dt::-webkit-scrollbar {
+    width: 0;
+}
+.content-dc::-webkit-scrollbar {
+    width: 0;
+}
+.detail-photo-sd ,.detail-photo-ar ,.detail-photo-maun , .detail-photo-mauchi, .detail-photo-sap, .detail-photo-da {
+    width: 100%;
+    height: 50vh;
+    background-image: url(./image/tranh-son-dau.jpg);
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+.detail-photo-mauchi {
+    background-image: url(./image/mau-chi-2.jpg);
+    background-position:  center;
+}
+.detail-photo-sap {
+    background-image: url(./image/mau-sap.jpg);
+    background-position:  center;
+}
+.detail-photo-da {
+    background-image: url(./image/mau-da.jpg);
+    background-position:  center;
+}
+.detail-photo-ar {
+    background-image: url(./image/tranh-tuong-su-dung-son-acrylic-3.jpg);
+    background-position:  center;
+}
+ .detail-photo-maun{
+    background-image: url(./image/tranh-mau-nuoc.jpg);
+    background-position:  center;
+}
+.detail-sd , .detail-acrylic , .detail-maun , .detail-mauc , .detail-sap , .detail-da {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: whitesmoke;
+}
+.detail-sd h1 , .detail-acrylic h1  , .detail-maun h1, .detail-mauc h1 , .detail-sap  h1 , .detail-da h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.detail-sd p, .detail-acrylic p, .detail-maun p  , .detail-mauc p, .detail-sap p, .detail-da p{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+} 
+@media only screen and (max-width: 849px) { 
+
+.themnail-dc h1, .themnail-dt h1{
+    width: 140%;
+    font-size: 20px;
+}
+.logo-tab img {
+        width: 70px;
+    }
+    .logo-tab {
+        width: 100px;
+        height: 17vh;
+        top: 10px;
+    }
+    .detail-sd p, .detail-acrylic p, .detail-maun p, .detail-mauc p, .detail-sap p, .detail-da p {
+        font-size: 15px;
+    }
+    .detail-sd, .detail-acrylic, .detail-maun, .detail-mauc, .detail-sap, .detail-da {
+        height: fit-content;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+<div class="container">
+    <div class="header-intro">
+        <div class="logo-tab">
+<img src="./image/logo-icon.png" alt="">
+        </div>
+        <a href="./main.html"> <i class='bx bx-x'></i></a> 
+      </div>
+
+
+<div class="main-detail-dc">
+<div class="themnail-dc">
+    <h1>materials to use brush</h1>
+</div>
+<div class="content-dc">
+<div class="detail-photo-sd">
+
+</div>
+<div class="detail-sd">
+    <h1>
+        Oil Painting</h1>
+    <p>Oil paint or oil paint is a type of painting made mainly from color pigments, usually dry powder and mixed with linseed oil. To evaluate the product quality of a set of oil paint colors, you can check the smoothness, color pigment of that oil paint color product. In terms of properties, oil paint colors are usually soft and smooth, with good coverage, but the color spread is not high. If you want a higher spread of oil color, you can dilute it with water or a specialized solvent for paints. Depending on your style, choose a suitable product. (But you should avoid mixing if you do not have knowledge of color mixing because if the ratio is not correct, it will damage the quality of the paint).</p>
+</div>
+<div class="detail-photo-ar"></div>
+<div class="detail-acrylic">
+    <h1>Acrylic</h1>
+    <p>
+        For people in the painting profession, acrylic colors are so familiar. However, many people are still unaware of this popular color. Acrylic color is a type of paint used to paint on materials such as paper, walls, fabrics... With this type of color, when it is pure, add a little water, it is similar to powder colors or oil paint colors. Diluted with water, acrylic colors resemble watercolors.</p>
+    
+</div>
+<div class="detail-photo-maun"></div>
+<div class="detail-maun">
+    <h1>watercolor</h1>
+    <p>Watercolor is a material used in painting, and watercolor painting is a popular painting technique. Watercolors form when pigments (usually in the form of powders) are dissolved in water to produce a colored solution. The most popular and traditional performance material associated with watercolor is paper, in addition to papyrus, plastic, parchment, leather, canvas, and wood. The basic properties of watercolors are transparency and lightness, as well as the purity and intensity of the pigments. These properties are due to the fact that thin layers of color are always placed on the paper and thus the layers become transparent to light rays passing through. In some East Asian countries, watercolor paintings are painted with inks called ink paintings. In the traditional painting of China, Vietnam, Japan and Korea, watercolor paintings are mainly ink paintings using only one color of black or brown. India, Ethiopia and many other countries also have the ancient art of watercolor painting.</p>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-detail-dungtay">
+ 
+    <div class="content-dt">
+    <div class="detail-photo-mauchi">
+    
+    </div>
+    <div class="detail-mauc">
+        <h1>
+            
+Water-based</h1>
+            <p>Water-based pencil color, also known as water-based lead color, currently on the market there are many different types of color-based pencils such as oil-based, lead-based. If you only look at the outside, this watercolor pencil product is not too different from ordinary pencil color products</p>
+    </div>
+
+    <div class="detail-photo-sap"></div>
+    <div class="detail-sap">
+        <h1>
+            Crayons</h1>
+       <p>Crayons, a drawing tool made from clay, chalk, plumbago, dry colors, and wax. There are two types of crayons, crayons and pastels.
+
+        Crayons, in circulation since the late 19th century, offer all the possibilities of black graphite points; and, in combination, ...
+        
+        Crayons, or crayons, are the ones most kids use to draw pictures, but artists use it too. It includes waxes such as paraffin, beeswax, carnauba wax and dry pigments. Some wax-like synthetics are also used in modern crayons. The wax is melted and added dry color with continuous mixing until completely dispersed. Usually, crayons are completely consumed in the marking process through the abrasive process.</p>
+        
+    </div>
+    <div class="detail-photo-da"></div>
+    <div class="detail-da">
+        <h1>Felt Color</h1>
+<p>The color of the felt color, also known as the marker color, is currently divided into two main types: oil-based color and water-based color. For professional users, people will use oil-based products because it is both more aesthetically pleasing, the color is more even, and the price of oil-based products is also more expensive.</p>   
+ </div>
+
+
+
+</div>
+
+
+ <div class="themnail-dt">
+    <h1>materials to use hand</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

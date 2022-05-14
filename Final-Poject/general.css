@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Comforter&family=Dongle:wght@300&family=Love+Light&family=Merriweather+Sans:wght@700&family=Open+Sans:wght@300&family=PT+Serif&family=Pacifico&family=Poppins&family=Redressed&family=Roboto+Serif:ital,wght@1,100&family=Shizuru&family=Smooch+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+}
+.header-intro {
+    width: 100%;
+    height: 20vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 70px;
+    position: relative;
+}
+.header-intro a {
+    color: #333;
+}
+.bx-x {
+    transition: .2s linear;
+}
+.bx-x:hover {
+color: rgb(251, 47, 47);
+    transition: .2s linear;
+}
+.main-detail {
+    width: 100%;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.logo-tab {
+    width: 130px;
+    height: 20vh;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0px;
+    left: 20px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+border: 1px solid black;
+}
+.logo-tab img {
+    width: 100px;
+}
+.photo-detail-1 {
+    width: 100%;
+  
+    background-image: url(./image/art-general.jpg);
+    height: 80vh;
+    background-attachment:fixed ;
+    background-position: center;
+    background-size:cover ;
+}
+.photo-detail-2,.photo-detail-3,.photo-detail-4 , .photo-detail-5{
+    height: 100vh;
+  background-image: url(./image/art-g-1.jpeg);
+  background-attachment:fixed ;
+  background-position: center;
+  background-size:cover ;
+}
+.photo-detail-3 {
+    background-image: url(./image/a-g-4.jpg);
+    background-position: center;
+    background-size:cover ;
+}
+.photo-detail-4 {
+    background-image: url(./image/a-g-3.jpg);
+    background-position: center;
+    background-size:cover ;
+}
+.detail-photo-1 p,.detail-photo-2 p ,.detail-photo-3 p,.detail-photo-4 p {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.detail-photo-1 ,.detail-photo-2 ,.detail-photo-3 ,.detail-photo-4  {
+width: 100%;
+height: 100vh;
+background-color: whitesmoke;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+
+flex-direction: column;
+}
+.detail-photo-1 h1,.detail-photo-2 h1,.detail-photo-3 h1,.detail-photo-4 h1 {
+    font-size: 80px;
+font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 849px) { 
+    .detail-photo-1 p, .detail-photo-2 p, .detail-photo-3 p, .detail-photo-4 p {
+        font-size: 15px;
+        
+    }
+    .detail-photo-1 h1, .detail-photo-2 h1, .detail-photo-3 h1, .detail-photo-4 h1 {
+        font-size: 30px;
+    }
+    .logo-tab img {
+        width: 70px;
+    }
+    .logo-tab {
+        width: 100px;
+        height: 17vh;
+        top: 10px;
+    }
+    .detail-photo-1, .detail-photo-2, .detail-photo-3, .detail-photo-4 {
+        height: fit-content;
+    }
+}

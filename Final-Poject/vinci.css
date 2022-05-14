@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Comforter&family=Dongle:wght@300&family=Love+Light&family=Merriweather+Sans:wght@700&family=Open+Sans:wght@300&family=PT+Serif&family=Pacifico&family=Redressed&family=Roboto+Serif:ital,wght@1,100&family=Shizuru&family=Smooch+Sans:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .big-container {
+  max-width: 1440px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+/* .container {
+  max-width: 1440px;
+} */
+.container {
+
+    overflow-x: hidden;
+}
+.max-w{
+  max-width: 1440px;
+}
+.head-vinci {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./image/header-vinci.jpg);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-family: "Pacifico", cursive;
+  background-attachment: fixed;
+}
+.head-vinci div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-vinci {
+  width: 100%;
+  height: 16vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-list {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-list ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-list ul a {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+}
+.header-list ul a li {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  transition: 0.5s linear;
+}
+.header-list ul a:hover {
+  background-color: rgb(187, 187, 187);
+  transition: 0.5s linear;
+}
+.header-list {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px;
+}
+.header-logo div {
+  width: 25%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-logo img {
+  width: 75%;
+  height: 80%;
+  object-fit: cover;
+}
+.main-vinci {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+}
+.list-btn {
+  width: 100%;
+  height: 10vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+}
+.buton {
+  width: 50%;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: 0.5s linear;
+  height: 100%;
+}
+.activeTab {
+  border-bottom: 5px solid black;
+}
+.buton:hover {
+  opacity: 1;
+  transition: 0.5s linear;
+}
+.list-tab {
+  width: 100%;
+  height: 100vh;
+}
+.btnred {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.themnail-vinci-child {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.themnail-vinci-child h1 {
+  font-size: 5rem;
+  font-family: "Open Sans", sans-serif;
+  transform: rotateZ(270deg);
+}
+.big-detail-lenardo {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.big-detail-lenardo::-webkit-scrollbar {
+  width: 0;
+}
+.photo-vinci-young {
+  background-image: url(./image/vinci-child.jpg);
+  width: 100%;
+  height: 50%;
+  background-position: left center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.content-vinci-child,
+.content-vinci-old {
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+.content-company-vinci {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+.photo-vinci-old {
+  width: 100%;
+  height: 50%;
+  background-image: url(./image/leonardo-2012.jpg);
+  background-position: left center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.photo-company-vinci {
+  width: 100%;
+  height: 50%;
+  background-image: url(./image/vinci3.jpg);
+  background-position: left center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main-lenardo {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  border-top: 1px solid black;
+}
+.themnail-career {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.themnail-career h1 {
+  font-size: 3rem;
+  transform: rotateZ(270deg);
+}
+.detail-career {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.painting-career {
+  width: 100%;
+  height: 100%;
+}
+.painting-career #painting {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.list-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.list-button ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30%;
+  padding: 20px;
+  padding-left: 30px;
+}
+.list-button ul li {
+  margin-right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  list-style: none;
+}
+.buttonColor {
+  opacity: 0.8;
+  transition: 0.5s linear;
+}
+.buttonColor:hover {
+  opacity: 1;
+  transition: 0.5s linear;
+}
+.list-button h1 {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.button-tab {
+  border: 2px solid black;
+  opacity: 1;
+}
+.mighty {
+  width: 100%;
+  height: 15vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mighty h1 {
+  font-size: 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.inventor {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  padding: 10px;
+  row-gap: 10px;
+  grid-template-rows: 41vh 15vh 41vh;
+}
+.col {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+.col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.col-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.col-4,
+.col-5 {
+  grid-row: 2/4;
+}
+.col-2 {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+.over-lay {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+}
+.col:hover .over-lay {
+  opacity: 1;
+  transition: 0.5s linear;
+}
+.tabMedicin {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  border: none;
+  display: none;
+}
+.activeTab {
+  display: flex;
+}
+.vinci-art {
+  background-image: url(./image/tuongniemvinci.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.over-lay-vinci {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.vinci-tab {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.75fr 1.5fr 0.75fr;
+}
+.photo-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+.photo-center img {
+  width: 75%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 40%;
+}
+.detail-right-tab {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 10px;
+}
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  width: 100%;
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-1,
+.row-2,
+.row-4,
+.row-5 {
+  z-index: 1;
+  color: #222;
+}
+
+.row-1 h1,
+.row-2 h1,
+.row-3 h1,
+.row-4 h1,
+.row-5 h1 {
+  color: #f2f2f2;
+  border-bottom: 3px solid #f2f2f2;
+  font-size: 100%;
+}
+.row-2 {
+  width: 100%;
+}
+.detail-left-tab {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+}
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 55vh;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 0.65fr 1.35fr;
+  padding: 0 20px;
+  border-top: 1px solid black;
+}
+.mydetail {
+  width: 100%;
+  padding: 10px;
+}
+.mydetail p {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 25px;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+}
+.photo-my {
+  width: 30vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 30vh;
+  border: 1px solid black;
+}
+.mydetail img {
+  width: 20vh;
+}
+.for {
+  width: 100%;
+  color: #222;
+  padding-top: 50px;
+}
+.for h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  width: 100%;
+}
+.for p {
+  font-size: 15px;
+}
+.vinci-medicin {
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/5.gif);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.over-lay-medicin {
+  width: 100%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.over-lay-medicin h1 {
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+.slider-photo-imgages {
+  width: 100%;
+  height: 90%;
+}
+.swiper-button-next
+.imgages {
+  height: 100%;
+}
+.imgages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev , .swiper-button-next {
+ color: black;
+    font-size: 100px;
+}
+/* .imgages {
+    width: 500px;
+    height: 90%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+} */
+@media only screen and (max-width: 849px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .big-container {
+    width: 100%;
+  }
+  /* .container {
+       
+   } */
+  .header-logo {
+    display: none;
+  }
+  .header-list {
+    width: 90%;
+  }
+  .big-detail-lenardo {
+    height: 60%;
+  }
+  .header-list ul a li {
+    font-size: 15px;
+  }
+  .head-vinci {
+    font-size: 1.4rem;
+  }
+  .list-btn {
+    display: none;
+  }
+  .list-tab {
+    display: none;
+  }
+  .themnail-vinci-child {
+    width: 100%;
+    height: 15vh;
+  }
+
+  .main-vinci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .themnail-vinci-child h1 {
+    font-size: 1rem;
+    transform: rotate(0deg);
+  }
+  .content-vinci-child,
+  .content-vinci-old,
+  .content-company-vinci {
+    height: auto;
+    padding: 10px 50px;
+  }
+  .main-lenardo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .themnail-career {
+    width: 100%;
+    height: 15vh;
+    font-size: 1.4rem;
+    border-top: 2px solid black;
+  }
+  .themnail-career h1 {
+    transform: rotate(0deg);
+  }
+  .detail-career {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .painting-career #painting {
+    height: 50vh;
+  }
+  .list-button h1 {
+    font-size: 1.5rem;
+  }
+  .list-button ul {
+    max-width: 290px;
+  }
+  .list-button ul li {
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .photo-my {
+    width: 23vh;
+    height: 25vh;
+  }
+  .photo-my img {
+    width: 18vh;
+  }
+  .for {
+    padding: 0;
+  }
+  .for h3 {
+    font-size: 15px;
+  }
+  .for p {
+    font-size: 10px;
+  }
+  .mydetail p {
+    font-size: 15px;
+  }
+  .mydetail {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .col-6,
+  .col-5 {
+    display: none;
+  }
+  .col-4 {
+    grid-column: 1/3;
+  }
+  .col-3 {
+    grid-column: 3/5;
+  }
+  .over-lay {
+    font-size: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+  .big-container {
+    width: 112%;
+  }
+}

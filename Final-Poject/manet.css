@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&family=Comforter&family=Dongle:wght@300&family=Love+Light&family=Merriweather+Sans:wght@700&family=Open+Sans:wght@300&family=PT+Serif&family=Pacifico&family=Poppins&family=Redressed&family=Roboto+Serif:ital,wght@1,100&family=Shizuru&family=Smooch+Sans:wght@500&display=swap');
+*{   
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    max-width: 1440px;
+}
+.header-intro {
+    width: 100%;
+    background-image: url(./image/main-image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.header-list {
+    height: 10%;
+    width: 100%;
+}
+.header-list ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.header-list ul a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
+   width: 25%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-list ul a li {
+color: rgb(255, 250, 250);
+font-family: 'Be Vietnam Pro', sans-serif;
+font-size: 2rem;
+transition: .5s linear;
+}
+.header-list ul a li:hover {
+    transition: .5s linear;
+    color: rgb(224, 224, 224);
+}
+.themnail-logo {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.themnail-logo h1 {
+    font-size: 8rem;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 1em black;
+}
+.themnail-logo hr {
+    width: 50%;
+    height: 4px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+}
+.themnail-logo p {
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+.themnail-life {
+    width: 100%;
+    height: 15vh;
+    background-color: #519259;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    font-size: 3rem;
+    color: black;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.main-detail-life {
+  
+    width:100%;
+    height: 160vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px 20px;
+}
+.detail-child , .detail-teen ,.detail-die{
+    display: flex;
+justify-content: start;
+align-items: center;
+position: relative;
+}
+.detail-teen {
+    justify-content: end;
+}
+.card-photo ,.card-photo-teen ,.card-photo-die {
+    width: 25%;
+    height: 100%;
+    background-image: url(./image/manet-baby.jpg);
+    background-position:  center;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+.card-photo-die {
+    background-image: url(./image/manet-old.jpg);
+}
+.card-photo-teen {
+    background-image: url(./image/manet-teen.jpg);
+}
+.card-detail , .card-detail-die{
+    top: 0;
+    left: 20%;
+  position: absolute;
+    width: 40%;
+    background-color: whitesmoke;
+    z-index: 1;
+    padding: 10px;
+    box-shadow:0.1em 0.1em 1em black;
+}
+.card-detail-teen {
+    top: 0;
+    right: 20%;
+  position: absolute;
+    width: 40%;
+    background-color: whitesmoke;
+    z-index: 1;
+    padding: 10px;
+    box-shadow:0.1em 0.1em 1em black;
+}
+.card-detail p ,.card-detail-teen p , .card-detail-die p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-detail h1  , .card-detail-teen h1 , .card-detail-die h1{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-detail-career {
+    background-color: #519259;
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 0.25fr 1.75fr;
+}
+.themnail-career {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.themnail-career h1 {
+    transform: rotate(270deg);
+    font-size: 4rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.big-detail-career {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 1.65fr 0.35fr;
+}
+.list-tab {
+    width: 100%;
+    height: 100%;
+}
+.activeTab {
+    border-bottom:3px solid #064635 ;
+    color: #064635;
+    display: flex;
+}
+.tab-painting {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: none;
+}
+.activeTab {
+    border-bottom:3px solid #064635 ;
+    color: #064635;
+    display: flex;
+}
+.tab-painting {
+    border: none;
+}
+.list-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    width: 48%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: whitesmoke;
+font-size: 1.5rem;
+}
+.activeTab {
+color: #064635;
+}
+.tab-painting-portrait , .tab-painting-landscape {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40% 20% 40%;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px;
+}
+.col {
+    width: 100%;
+   height: 100%;
+}
+.col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top center;
+}
+.col-1, .col-8   {
+    grid-column: 1/3;
+}
+.col-2 , .col-9 {
+    grid-column:3/4 ;
+    grid-row: 1/3;
+}
+.col-3, .col-10 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.col-4 , .col-5 , .col-11 , .col-12  {
+    grid-row: 2/4;
+}
+.col-6 , .col-13 {
+    grid-column: 3/5;
+}
+.main-detail-nighty {
+    width: 100%;
+    height: 120vh;
+}
+.card-main-detail-1 {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+.card-main-detail-2 {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+.card-small-detail , .card-small-detail-4 {
+    width: 100%;
+    height:60vh;
+    border: 1px solid #519259;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+ .card-small-detail-3  {
+    width: 100%;
+    height:60vh;
+    border: 1px solid #519259;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+ }
+ .card-small-detail-3 img ,.card-small-detail-2 img {
+     width: 80%;
+     height: 80%;
+     object-fit: cover;
+     margin-bottom: 10px;
+ }
+.card-small-detail-2 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #519259;
+    border-left: 1px solid #519259;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+}
+.footer {
+    width: 100%;
+    height: 55vh;
+    background-color: #519259;
+    display: grid;
+    grid-template-columns: 1fr 0.65fr 1.35fr;
+    padding: 0 20px;
+    border-top: 1px solid black;
+    color: whitesmoke;
+}
+.mydetail {
+    width: 100%;
+    padding: 10px;
+    
+}
+.mydetail p {
+margin-top: 20px ;
+margin-left: 30px;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+.photo-my {
+    width: 30vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30vh;
+    border: 1px solid black;
+}
+.mydetail img {
+    width: 20vh;
+}
+.for {
+    width: 100%;
+    color: whitesmoke;
+    padding-top: 50px ;
+}
+.for h3 {
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 25px;
+    width: 100%;
+}
+.for p {
+
+    font-size: 15px;
+}
+
+@media only screen and (max-width:849px)  {
+    body {
+        display: block;
+    }
+    .container {
+        width: 100%;
+    }
+    .header-list ul a li {
+        font-size: 15px;
+    }
+    .themnail-logo h1 {
+        font-size: 2rem;
+    }
+    .themnail-logo p {
+        font-size: 15px;
+    }
+    .main-detail-life {
+        height: 210vh;
+    }
+    .detail-child, .detail-teen, .detail-die {
+      flex-direction: column;  
+    } 
+    .detail-teen {
+        flex-direction: column-reverse;
+    }
+    .card-detail, .card-detail-die , .card-detail-teen {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-photo, .card-photo-teen, .card-photo-die {
+        width: 100%;
+        background-attachment: fixed;
+        border-radius: 0;
+    }
+    .card-detail p, .card-detail-teen p, .card-detail-die p {
+        font-size: 15px;
+    }
+    .themnail-career h1 {
+        font-size: 20px;
+    }
+    .main-detail-career {
+        height: 100vh;
+    }
+    .tab-painting-portrait, .tab-painting-landscape {
+        height: 50vh;
+    }
+    .button {
+        font-size: 13px;
+        width: 49%;
+    }
+    .card-small-detail, .card-small-detail-4 {
+        font-size: 10px;
+    }
+    .card-main-detail-1 {
+        grid-template-columns: 1.25fr 0.75fr;
+    }
+    .card-main-detail-2 {
+        grid-template-columns: 0.75fr 1.25fr;
+    }
+    .card-small-detail-2 {
+        font-size: 15px;
+    }
+    .photo-my {
+        width: 23vh;
+        height: 25vh;
+    }
+    .photo-my img {
+        width: 18vh;
+    }
+    .for {
+        padding: 0;
+    }
+   .for h3 {
+       font-size: 15px;
+   }
+   .for p {
+       font-size: 10px;
+   }
+   .mydetail p {
+       font-size: 15px;
+   }
+}
